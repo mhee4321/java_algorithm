@@ -1,3 +1,4 @@
+package DoIt;
 import java.util.Scanner;
 
 class Digits{
