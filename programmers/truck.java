@@ -1,7 +1,7 @@
 package programmers;
 import java.util.*;
 
-class Solution {
+class truck {
     public static int solution(int bridge_length, int weight, int[] truck_weights) {
         int answer = 0;
         int size = truck_weights.length, idx = 0;

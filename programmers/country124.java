@@ -1,6 +1,6 @@
 package programmers;
 
-public class Country124 {
+public class country124 {
     public static String solution(int n) {
         String[] num = {"4", "1", "2"};
         String result = "";
