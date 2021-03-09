@@ -1,36 +1,26 @@
 package programmers;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 class Solution {
     public static int solution(int bridge_length, int weight, int[] truck_weights) {
-            Stack<Integer> truckStack = new Stack<>();
-            Map<Integer, Integer> bridgeMap = new HashMap<>();
+        int answer = 0;
+        int size = truck_weights.length, idx = 0;
+        int current = 0;
+        Queue<Integer> bridge = new LinkedList<>();
 
-            for (int i = truck_weights.length-1; i >= 0; i--)
-                truckStack.push(truck_weights[i]);
-
-            int answer = 0;
-            int sum = 0;
-            while(true) {
-                answer++;
-
-                if (bridgeMap.containsKey(answer))
-                    bridgeMap.remove(answer);
-
-                sum = bridgeMap.values().stream().mapToInt(Number::intValue).sum();
-
-                if (!truckStack.isEmpty())
-                    if (sum + truckStack.peek() <= weight)
-                        bridgeMap.put(answer + bridge_length, truckStack.pop());
-
-                if (bridgeMap.isEmpty() && truckStack.isEmpty())
-                    break;
-
-
+        do {
+            if (bridge.size() == bridge_length)
+                current -= bridge.poll();
+            if (idx < size && current + truck_weights[idx] <= weight) {
+                bridge.add(truck_weights[idx]);
+                current += truck_weights[idx++];
             }
-            return answer;
+            else
+                bridge.add(0);
+            answer++;
+        }while(current != 0);
+
+        return answer;
     }
     public static void main(String[] args){
         int a = 2;

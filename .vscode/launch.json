@@ -1,0 +1,106 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Country124",
+            "request": "launch",
+            "mainClass": "programmers.Country124",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Debugging Java",
+            "request": "launch",
+            "cwd": "/Users/mhee4/java_algorithm",
+            "console": "externalTerminal",
+            "stopOnEntry": false,
+            "mainClass": "",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxArray",
+            "request": "launch",
+            "mainClass": "DoIt.Array.MaxArray",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch cardConvRev",
+            "request": "launch",
+            "mainClass": "DoIt.Array.cardConvRev",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch findPrime",
+            "request": "launch",
+            "mainClass": "DoIt.Array.findPrime",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch intArray",
+            "request": "launch",
+            "mainClass": "DoIt.Array.intArray",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch swapReverse",
+            "request": "launch",
+            "mainClass": "DoIt.Array.swapReverse",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Digits",
+            "request": "launch",
+            "mainClass": "DoIt.Digits",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "programmers.Solution",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch stockPrice",
+            "request": "launch",
+            "mainClass": "programmers.stockPrice",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch stringCompress",
+            "request": "launch",
+            "mainClass": "programmers.stringCompress",
+            "projectName": "java_algorithm_28ebbc7e"
+        },
+        {
+            "type": "java",
+            "name": "Launch CardConvRev",
+            "request": "launch",
+            "mainClass": "chap02.CardConvRev"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeNumber2",
+            "request": "launch",
+            "mainClass": "chap02.PrimeNumber2"
+        }
+    ]
+}
