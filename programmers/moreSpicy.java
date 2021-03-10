@@ -2,8 +2,6 @@ package programmers;
 
 import java.util.PriorityQueue;
 
-
-
 public class moreSpicy {
     public static int solution(int[] scoville, int K) {
         PriorityQueue<Integer> q = new PriorityQueue<>();
@@ -15,7 +13,6 @@ public class moreSpicy {
         while(q.size() > 1 && q.peek() < K){
             int first = q.poll();
             int second = q.poll();
-
             int mix = first + (2 * second);
             q.add(mix);
             answer++;

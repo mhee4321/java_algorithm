@@ -1,6 +1,5 @@
 package programmers;
 
-import java.util.Locale;
 
 public class JadenCase {
     public String solution(String s) {
