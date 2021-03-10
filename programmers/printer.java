@@ -6,7 +6,7 @@ public class printer {
     public static int solution(int[] priorities, int location) {
         int answer = 1;
         //int형 priorityQueue 선언 (우선순위가 높은 숫자 순)
-        PriorityQueue p = new PriorityQueue<>(Collections.reverseOrder());;
+        PriorityQueue<Integer> p = new PriorityQueue<>(Collections.reverseOrder());
 
         for(int i : priorities){
             p.add(i);
@@ -14,7 +14,7 @@ public class printer {
 
         while(!p.isEmpty()){
             for(int i=0; i<priorities.length; i++){
-                if(priorities[i] == (int)p.peek()){
+                if(priorities[i] == p.peek()){
                     if(i == location){
                         return answer;
                     }
